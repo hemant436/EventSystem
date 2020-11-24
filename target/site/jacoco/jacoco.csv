@@ -4,5 +4,6 @@ EventSystem,com.mycompany.app,App,7,0,0,0,3,0,2,0,2,0
 EventSystem,dao,TransactionManager,336,0,18,0,108,0,13,0,4,0
 EventSystem,service,GeneralService,141,0,2,0,32,0,5,0,4,0
 EventSystem,service,Event,59,0,0,0,25,0,17,0,17,0
-EventSystem,service,SecurityInterceptor,147,0,18,0,37,0,13,0,4,0
+EventSystem,service,AuthenticationService,55,0,6,0,16,0,5,0,2,0
+EventSystem,service,RestAuthenticationFilter,40,0,6,0,17,0,7,0,4,0
 EventSystem,service,RouteProcess,146,0,8,0,41,0,8,0,4,0

@@ -1,5 +1,5 @@
 package service;
-import javax.annotation.security.RolesAllowed;
+
 import javax.servlet.http.Cookie;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
@@ -58,7 +58,7 @@ public class GeneralService {
 		
 		
 	   } 
-		@RolesAllowed("ADMIN")
+		
 		@POST 
 		@Path("/deleteEvent") 
 		@Consumes(MediaType.APPLICATION_JSON)

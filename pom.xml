@@ -79,11 +79,11 @@
     <version>1.4.1</version>
 </dependency>
     <!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxrs -->
- <dependency>
+ <!-- <dependency>
     <groupId>org.jboss.resteasy</groupId>
     <artifactId>resteasy-jaxrs</artifactId>
     <version>3.13.2.Final</version>
-</dependency>
+</dependency> -->
  <!--   https://mvnrepository.com/artifact/org.jboss.resteasy/jaxrs-api
 <dependency>
     <groupId>org.jboss.resteasy</groupId>
@@ -104,7 +104,7 @@ https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-core
 		<version>2.3.1.GA</version>
 	</dependency> -->
    <!-- JAXB support -->
-   <dependency>
+   <!-- <dependency>
       <groupId>org.jboss.resteasy</groupId>
       	<artifactId>resteasy-jaxb-provider</artifactId>
       <version>2.3.1.GA</version>
@@ -112,8 +112,8 @@ https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-core
    <dependency>
 	<groupId>net.sf.scannotation</groupId>
 	<artifactId>scannotation</artifactId>
-	<version>1.0.2</version>
-</dependency>
+	<version>1.0.2</version> 
+</dependency>-->
   </dependencies>
 
   <build>

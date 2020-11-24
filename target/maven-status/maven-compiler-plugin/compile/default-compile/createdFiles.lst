@@ -1,7 +1,8 @@
 service\Event.class
+service\RestAuthenticationFilter.class
 dao\TransactionManager.class
 service\RouteProcess.class
-service\SecurityInterceptor.class
+service\AuthenticationService.class
 com\mycompany\app\App.class
 service\GeneralService.class
 HelloService.class

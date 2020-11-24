@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
-<!DOCTYPE web-app
-    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-    "http://java.sun.com/dtd/web-app_2_3.dtd">
-<!-- <web-app>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
 
 	<context-param>
 		<param-name>resteasy.scan</param-name>
@@ -22,7 +23,7 @@
   
 	<servlet>
 		<servlet-name>Event Management System REST Service</servlet-name>
-		<servlet-class>org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher</servlet-class>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -32,30 +33,14 @@
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
 	
-	
+	<filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>service.RestAuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/event/*</url-pattern>
+  </filter-mapping>
 	
 
-</web-app> -->
-
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
-  <!-- Auto scan REST service -->
-    <context-param>
-        <param-name>resteasy.scan</param-name>
-        <param-value>false</param-value>
-    </context-param>
-     
-    <servlet>
-        <servlet-name>resteasy-servlet</servlet-name>
-        <servlet-class>
-            org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher
-        </servlet-class>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-  
-    <servlet-mapping>
-        <servlet-name>resteasy-servlet</servlet-name>
-        <url-pattern>/*</url-pattern>
-    </servlet-mapping>
 </web-app>
-
